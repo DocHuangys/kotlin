@@ -45,7 +45,7 @@ public interface ConditionalEffect : Effect
 @SinceKotlin("1.3")
 public interface SimpleEffect : Effect {
     /**
-     * Specifies that this effect can only be observed if [booleanExpression] is true.
+     * Specifies that this effect, when observed, guarantees [booleanExpression] to be true.
      *
      * Note: [booleanExpression] can accept only a subset of boolean expressions,
      * where a function parameter or receiver (`this`) undergoes
